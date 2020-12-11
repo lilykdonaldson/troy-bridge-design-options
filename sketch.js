@@ -7,9 +7,9 @@ function preload()
   // RENDERING 1
  	imgunderlay = loadImage("images/view1_base.png");
     projectorMuralsInstead = loadImage("images/view1_base.png");
-	projectorTwo = loadImage("images/view1_projector2.png");
-	projectorHalf = loadImage("images/view1_projector1.png");
-	projectorFull = loadImage("images/view1_projector1.png");
+	//projectorTwo = loadImage("images/view1_projector2.png");
+	//projectorHalf = loadImage("images/view1_projector1.png");
+	//projectorFull = loadImage("images/view1_projector1.png");
 	muralUV = loadImage("images/view1_UV.png");
 	muralLED = loadImage("images/view1_noUV.png");
 	bridgeToWater = loadImage("images/view1_bridge.png");
@@ -77,31 +77,31 @@ function draw(){
 //PROJECTORS
 	if(projector == 'two'){
 		if(frameCount%2 == 0){
-			image(projectorHalf, 0, 0); 
+			//image(projectorHalf, 0, 0); 
 		}
 		else{
-			image(projectorTwo, 0, 0); 
+			//image(projectorTwo, 0, 0); 
 		}
 		price+=34000;
 		document.getElementById("projectors_ta").innerHTML = '$'+34000;
 	}
 	else if(projector == 'half'){
 		if(frameCount%2 == 0){
-			image(projectorHalf, 0, 0); 
+			//image(projectorHalf, 0, 0); 
 		}
 		else{
-			image(projectorTwo, 0, 0); 
+			//image(projectorTwo, 0, 0); 
 		}
 		price+=68000;
 		document.getElementById("projectors_ta").innerHTML = '$'+68000;
 	}
 	else if(projector == 'full'){
 		if(frameCount%2 == 0){
-			image(projectorHalf, 0, 0); 
+			//image(projectorHalf, 0, 0); 
 			image(projector21, 510, 0); 
 		}
 		else{
-			image(projectorTwo, 0, 0); 
+			//image(projectorTwo, 0, 0); 
 			image(projector22, 510, 0); 
 		}
 		price+=136000;
