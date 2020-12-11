@@ -7,10 +7,10 @@ function preload()
   // RENDERING 1
  	imgunderlay = loadImage("images/view1_base.png");
     projectorMuralsInstead = loadImage("images/view1_base.png");
-	projectorTwo = loadImage("images/view1_projector2.png");
-	projectorHalf = loadImage("images/view1_projector1.png");
+	projectorTwo = loadImage("view1_projector2.png");
+	projectorHalf = loadImage("view1_projector1.png");
 	//projectorFull = loadImage("images/view1_projector1.png");
-	muralUV = loadImage("images/view1_UV.png");
+	muralUV = loadImage("view1_UV.png");
 	muralLED = loadImage("images/view1_noUV.png");
 	bridgeToWater = loadImage("images/view1_bridge.png");
 	bridgeFull = loadImage("images/view1_bridge.png");
