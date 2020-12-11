@@ -154,7 +154,7 @@ function draw(){
 		document.getElementById("gobos_ta").innerHTML = '';
 	}
 	//underside
-	price+=12000;
+	price+=13000;
 	//LED murals
 	price+=25850;
 	//text('Total Cost Estimate: $'+price, 300, 550);
