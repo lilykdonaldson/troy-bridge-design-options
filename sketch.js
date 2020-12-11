@@ -65,14 +65,14 @@ function draw(){
 	if(mural == 'UV'){
 		image(muralUV, 0, 0); 
 		image(muralUV2, 510, 0); 
-		price+=5000;
-		document.getElementById("UV_ta").innerHTML = '$'+5000;
+		price+=4800;
+		document.getElementById("UV_ta").innerHTML = '$'+4800;
 	}
 	else if(mural == 'led'){
 		image(muralLED, 0, 0); 
 		image(muralLED2, 510, 0); 
-		price+=3000;
-		document.getElementById("LEDmural_ta").innerHTML = '$'+3000;
+		//price+=3000;
+		//document.getElementById("LEDmural_ta").innerHTML = '$'+3000;
 	}
 //PROJECTORS
 	if(projector == 'two'){
@@ -82,8 +82,8 @@ function draw(){
 		else{
 			image(projectorTwo, 0, 0); 
 		}
-		price+=4000;
-		document.getElementById("projectors_ta").innerHTML = '$'+4000;
+		price+=34000;
+		document.getElementById("projectors_ta").innerHTML = '$'+34000;
 	}
 	else if(projector == 'half'){
 		if(frameCount%2 == 0){
@@ -92,8 +92,8 @@ function draw(){
 		else{
 			image(projectorTwo, 0, 0); 
 		}
-		price+=8000;
-		document.getElementById("projectors_ta").innerHTML = '$'+8000;
+		price+=68000;
+		document.getElementById("projectors_ta").innerHTML = '$'+68000;
 	}
 	else if(projector == 'full'){
 		if(frameCount%2 == 0){
@@ -104,8 +104,8 @@ function draw(){
 			image(projectorTwo, 0, 0); 
 			image(projector22, 510, 0); 
 		}
-		price+=12000;
-		document.getElementById("projectors_ta").innerHTML = '$'+12000;
+		price+=136000;
+		document.getElementById("projectors_ta").innerHTML = '$'+136000;
 	}
 	else{
 		document.getElementById("projectors_ta").innerHTML = '';
@@ -115,8 +115,8 @@ function draw(){
 		document.getElementById("speakers_ta").innerHTML = '';
 	}
 	else if(speaker == 'yes'){
-		price+=4000;
-		document.getElementById("speakers_ta").innerHTML = '$'+4000;
+		price+=2000;
+		document.getElementById("speakers_ta").innerHTML = '$'+2000;
 	}
 
 
@@ -127,8 +127,9 @@ function draw(){
 	}
 	else if(bridge == 'towater'){
 		image(bridgeToWater, 0, 0); 
-		price+=18000;
-		document.getElementById("bridge_ta").innerHTML = '$'+18000;
+		image(bridgeToWater2, 510, 0); 
+		price+=200000;
+		document.getElementById("bridge_ta").innerHTML = '$'+200000;
 	}
 	else if(bridge == 'full'){
 		image(bridgeFull, 0, 0); 
@@ -145,13 +146,17 @@ function draw(){
 			image(goboYes2, 0, 0); 
 			image(gobo2, 510, 0); 
 		}
-		price+=5000;
-		document.getElementById("gobos_ta").innerHTML = '$'+5000;
+		price+=2400;
+		document.getElementById("gobos_ta").innerHTML = '$'+2400;
 	}
 	else if(gobo == 'no'){
 		//image(img2, 0, 0); 
 		document.getElementById("gobos_ta").innerHTML = '';
 	}
+	//underside
+	price+=12120;
+	//LED murals
+	price+=25850;
 	//text('Total Cost Estimate: $'+price, 300, 550);
 	document.getElementById("total_ta").innerHTML = '$'+price;
 
