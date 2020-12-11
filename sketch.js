@@ -8,9 +8,9 @@ function preload()
  	imgunderlay = loadImage("images/view1_base.png");
 
     projectorMuralsInstead = loadImage("images/view1_base.png");
-	projectorTwo = loadImage("images/view1_projector2.png");
-	projectorHalf = loadImage("images/view1_projector1.png");
-	projectorFull = loadImage("images/view1_projector1.png");
+	projectorTwo = loadImage("images/view1_projector2.PNG");
+	projectorHalf = loadImage("images/view1_projector1.PNG");
+	projectorFull = loadImage("images/view1_projector1.PNG");
 	muralUV = loadImage("images/view1_UV.PNG");
 	muralLED = loadImage("images/view1_noUV.png");
 	bridgeToWater = loadImage("images/view1_bridge.png");
