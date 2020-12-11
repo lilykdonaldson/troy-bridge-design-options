@@ -4,8 +4,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mappa-mundi/dist/mappa.min.js"></script>
+
     
   <style> body {padding: 0; margin: 50px;} 
+  table {border-collapse: collapse;}
+  td, th {border: 1px solid #7D7C7C; text-align: left; padding: 8px;background-color: #dddddd;}
   </style>
   </head>
   <body oncontextmenu="return false;">
@@ -40,6 +43,46 @@
     <option value="yes">Yes</option>
     <option value="no">No</option>
 </select>
+</br>
+<p><b>PRICING</b></p>
+    <table>
+    <tbody>
+    <tr>
+    <td>Projectors</td>
+    <td><div id="projectors_ta"></div></td>
+    </tr>
+    <tr>
+    <td>Speakers</td>
+    <td><div id="speakers_ta"></div></td>
+    </tr>
+    <tr>
+    <td>UV Mural Illumination</td>
+    <td><div id="UV_ta"></div></td>
+    </tr>
+    <tr>
+    <td>LED Mural Illumination</td>
+    <td><div id="LEDmural_ta"></div></td>
+    </tr>
+    <tr>
+    <td>Bridge Lights</td>
+      <td><div id="bridge_ta"></div></td>
+    </tr>
+    <tr>
+    <td>Rotating Gobos</td>
+    <td><div id="gobos_ta"></div></td>
+    </tr>
+    <tr>
+    <td>Bridge Underside</td>
+    <td><div id="underside_ta"></div></td>
+    </tr>
+    <tr>
+      <td><b>Total Price: </b></td>
+    <td><div id="total_ta"></div></td>
+    </tr>
+    </tbody>
+    </table>
+</br>
+</br>
 <script src="sketch.js"></script>
 <div>
 </div>

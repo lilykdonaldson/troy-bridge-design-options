@@ -34,7 +34,7 @@ function preload()
 function setup() {
 	//background('white');
   // create canvas
-    createCanvas(1400, 2000);
+    createCanvas(1400, 600);
 	//image(imgunderlay, 0, 0); 
 	image(imgunderlay, 0, 0);
 	frameRate(4);
@@ -66,11 +66,13 @@ function draw(){
 		image(muralUV, 0, 0); 
 		image(muralUV2, 510, 0); 
 		price+=5000;
+		document.getElementById("UV_ta").innerHTML = '$'+5000;
 	}
 	else if(mural == 'led'){
 		image(muralLED, 0, 0); 
 		image(muralLED2, 510, 0); 
 		price+=3000;
+		document.getElementById("LEDmural_ta").innerHTML = '$'+3000;
 	}
 //PROJECTORS
 	if(projector == 'two'){
@@ -81,6 +83,7 @@ function draw(){
 			image(projectorTwo, 0, 0); 
 		}
 		price+=4000;
+		document.getElementById("projectors_ta").innerHTML = '$'+4000;
 	}
 	else if(projector == 'half'){
 		if(frameCount%2 == 0){
@@ -90,6 +93,7 @@ function draw(){
 			image(projectorTwo, 0, 0); 
 		}
 		price+=8000;
+		document.getElementById("projectors_ta").innerHTML = '$'+8000;
 	}
 	else if(projector == 'full'){
 		if(frameCount%2 == 0){
@@ -101,26 +105,35 @@ function draw(){
 			image(projector22, 510, 0); 
 		}
 		price+=12000;
+		document.getElementById("projectors_ta").innerHTML = '$'+12000;
+	}
+	else{
+		document.getElementById("projectors_ta").innerHTML = '';
 	}
 //SPEAKERS
 	if(speaker == 'no'){
+		document.getElementById("speakers_ta").innerHTML = '';
 	}
 	else if(speaker == 'yes'){
 		price+=4000;
+		document.getElementById("speakers_ta").innerHTML = '$'+4000;
 	}
 
 
 //BRIDGE LIGHTS
 	if(bridge == 'none'){
 		//image(bridge, 0, 0); 
+		document.getElementById("bridge_ta").innerHTML = '';
 	}
 	else if(bridge == 'towater'){
 		image(bridgeToWater, 0, 0); 
 		price+=18000;
+		document.getElementById("bridge_ta").innerHTML = '$'+18000;
 	}
 	else if(bridge == 'full'){
 		image(bridgeFull, 0, 0); 
 		price+=40000;
+		document.getElementById("bridge_ta").innerHTML = '$'+40000;
 	}
 //GOBOS
 	if(gobo == 'yes'){
@@ -133,10 +146,13 @@ function draw(){
 			image(gobo2, 510, 0); 
 		}
 		price+=5000;
+		document.getElementById("gobos_ta").innerHTML = '$'+5000;
 	}
 	else if(gobo == 'no'){
 		//image(img2, 0, 0); 
+		document.getElementById("gobos_ta").innerHTML = '';
 	}
-	text('Total Cost Estimate: $'+price, 300, 550);
+	//text('Total Cost Estimate: $'+price, 300, 550);
+	document.getElementById("total_ta").innerHTML = '$'+price;
 
  }
