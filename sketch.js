@@ -8,9 +8,9 @@ function preload()
  	imgunderlay = loadImage("images/view1_base.png");
 
     projectorMuralsInstead = loadImage("images/view1_base.png");
-	projectorTwo = loadImage("images/view1_projector2.PNG");
-	projectorHalf = loadImage("images/view1_projector1.PNG");
-	projectorFull = loadImage("images/view1_projector1.PNG");
+	//projectorTwo = loadImage("images/view1_projector2.PNG");
+	//projectorHalf = loadImage("images/view1_projector1.PNG");
+	//projectorFull = loadImage("images/view1_projector1.PNG");
 	muralUV = loadImage("images/view1_UV.PNG");
 	muralLED = loadImage("images/view1_noUV.png");
 	bridgeToWater = loadImage("images/view1_bridge.png");
@@ -59,33 +59,33 @@ function draw(){
 		price+=3000;
 	}
 //PROJECTORS
-	if(projector == 'two'){
-		if(frameCount%2 == 0){
-			image(projectorHalf, 0, 0); 
-		}
-		else{
-			image(projectorTwo, 0, 0); 
-		}
-		price+=4000;
-	}
-	else if(projector == 'half'){
-		if(frameCount%2 == 0){
-			image(projectorHalf, 0, 0); 
-		}
-		else{
-			image(projectorTwo, 0, 0); 
-		}
-		price+=8000;
-	}
-	else if(projector == 'full'){
-		if(frameCount%2 == 0){
-			image(projectorHalf, 0, 0); 
-		}
-		else{
-			image(projectorTwo, 0, 0); 
-		}
-		price+=12000;
-	}
+	// if(projector == 'two'){
+	// 	if(frameCount%2 == 0){
+	// 		image(projectorHalf, 0, 0); 
+	// 	}
+	// 	else{
+	// 		image(projectorTwo, 0, 0); 
+	// 	}
+	// 	price+=4000;
+	// }
+	// else if(projector == 'half'){
+	// 	if(frameCount%2 == 0){
+	// 		image(projectorHalf, 0, 0); 
+	// 	}
+	// 	else{
+	// 		image(projectorTwo, 0, 0); 
+	// 	}
+	// 	price+=8000;
+	// }
+	// else if(projector == 'full'){
+	// 	if(frameCount%2 == 0){
+	// 		image(projectorHalf, 0, 0); 
+	// 	}
+	// 	else{
+	// 		image(projectorTwo, 0, 0); 
+	// 	}
+	// 	price+=12000;
+	// }
 //SPEAKERS
 	if(speaker == 'no'){
 	}
