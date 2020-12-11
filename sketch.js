@@ -10,7 +10,7 @@ function preload()
 	projectorTwo = loadImage("images/view1_projector2.png");
 	projectorHalf = loadImage("images/view1_projector1.png");
 	projectorFull = loadImage("images/view1_projector1.png");
-	muralUV = loadImage("images/view1_UV.PNG");
+	muralUV = loadImage("images/view1_UV.png");
 	muralLED = loadImage("images/view1_noUV.png");
 	bridgeToWater = loadImage("images/view1_bridge.png");
 	bridgeFull = loadImage("images/view1_bridge.png");
